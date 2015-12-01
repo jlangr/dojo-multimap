@@ -1,0 +1,19 @@
+In this exercise, you will be building a MultiMap class test-first. The multi map is similar to a Java
+HashMap, except it allows storing multiple values for a single key. The closest real-life analog is 
+a language dictionary: the keys are words, and the values for a given word are the definitions for
+that word.
+
+The multi map should support the following methods:
+
+    void put(K, V)   -- supports adding a *single* value V at a time to the list stored at K.
+                     -- for example, map.put("some word", "some definition);
+
+    List<V> get(K)   -- returns the list of elements V stored at key K
+
+    int size()       -- the number of unique keys K
+
+    boolean isEmpty() -- true if the size is 0, false otherwise
+
+    int countOfAllValues()  -- the total number of values V stored at all keys K
+
+ The multi map should throw an exception when a client passes a key K with value null to the put method.
